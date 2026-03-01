@@ -1,0 +1,132 @@
+.page {
+  padding: var(--space-7) 0;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--space-7);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: var(--text-5xl);
+  margin-bottom: var(--space-3);
+}
+
+.subtitle {
+  font-family: var(--font-accent);
+  font-size: var(--text-lg);
+  color: var(--color-text-light);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-8);
+}
+
+.formSection {
+  background: var(--color-bg-card);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+
+.formTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+}
+
+.infoSection {
+  background: var(--color-primary);
+  color: var(--color-text-inverse);
+  padding: var(--space-6);
+  border-radius: var(--radius-xl);
+}
+
+.infoTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-5);
+  color: var(--color-text-inverse);
+}
+
+.infoItem {
+  margin-bottom: var(--space-5);
+}
+
+.infoLabel {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-2);
+}
+
+.infoText {
+  font-size: var(--text-base);
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+  background: var(--color-bg-card);
+  padding: var(--space-7);
+  border-radius: var(--radius-xl);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  animation: fadeInUp 0.3s ease;
+}
+
+.modalIcon {
+  font-size: 4rem;
+  margin-bottom: var(--space-4);
+}
+
+.modalTitle {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-3);
+}
+
+.modalText {
+  color: var(--color-text-light);
+  margin-bottom: var(--space-5);
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+  
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+}
